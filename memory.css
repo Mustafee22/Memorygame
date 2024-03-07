@@ -1,0 +1,70 @@
+body{
+    background-image: url(/img/image-memory1.webp);
+    background-size: cover;
+  }
+  
+  .You-win{
+   margin: auto;
+  }
+  .namn{
+    color:white;
+    display: flex;
+    justify-content: center;
+    text-shadow: black 0px 0px 10px;
+    font-weight: bold;
+  }
+  
+  .memorygame {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: antiquewhite;
+    grid-gap: 30px;
+     position: relative;
+     top: 40px;
+     box-shadow: 100px;
+    width: 600px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(109, 67, 67) 
+    
+  }
+  
+  .kort  {
+    background-color: purple;
+  
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .kort-backsida  {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: blue;
+     backface-visibility: hidden;
+      position: absolute;
+      left: auto;
+     border-radius: 10px;
+     transform: rotateY(180deg);
+     transition: transform 0.4s;
+    
+    }
+  
+  .kort-backsida img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .kort.locked {
+    pointer-events: none; 
+  
+  }
+  
+  .flip {
+    transform: rotateY(0deg);
+  }
+  
